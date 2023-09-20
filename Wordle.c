@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-// Function to check if a word is valid based on the criteria
 int isValidWord(char word[], char secret[], int green[], char yellow[], char grey[]) {
     int i;
     int secret_count[26] = {0};
@@ -40,7 +39,7 @@ int main() {
     
     for (int i = 0; i < 5; i++) {
         char type;
-        scanf(" %c", &type); // Read the space before the character
+        scanf(" %c", &type); 
         if (type == 'G') {
             green[i] = 1;
         } else if (type == 'Y') {
